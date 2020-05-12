@@ -82,12 +82,11 @@ function fun(){
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:transparent;color:white" id="cc">
     <div class="container-fluid">
       <h3 class="navbar-brand btn border border-danger border-top-0 border-right-0 border-left-0 ">Final Year Buddies</h3>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-         <!-- 
           <li class="nav-item">
            <input type="button" id="edubtn" value="Education" onmouseover="EDUhide(this)" class="nav-link btn">
           </li>
@@ -96,9 +95,9 @@ function fun(){
           </li>
            <li class="nav-item">
             <input type="button" id="shobtn" value="Shoping" onmouseover="SHOhide(this)" class="nav-link btn">
-          </li>-->
+          </li>
         </ul>
-      </div>
+      </div>-->
     </div>
 </nav>
 <header class="masthead">
@@ -112,9 +111,9 @@ function fun(){
 </header>
 
 <div class="container-fluid pt-2 pb-2"  style="background-color: aquamarine;">
-  <center><form action="/action_page.php" oninput="fun()">
-  <label for="sel1" class="text-danger">Select Semester to get Materials:</label>
-  <div class="form-group col-sm-4 col-lg-2 col-xs-6">
+  <center><form oninput="fun()">
+  <label for="sel1" class="text-danger"><strong>Select Semester to get Materials:</strong></label>
+  <div class="form-group col-sm-4 col-lg-3 col-xs-6">
     
     <select class="form-control rounded-pill" id="sell" name="sellist1">
     <option>select</option>
@@ -129,12 +128,12 @@ function fun(){
 </div>
 
 <div class="container-fluid" style="background-color: aquamarine;display:none" id="mat32">
-<br>
+
 <h2 class="text-center text-info border border-danger border-top-0 border-right-0 border-left-0 ">3 - 2 Materials</h2>
 
 <section class="container">
 <div class="row">
-<div class="col-sm-4 mb-5">
+<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12 mb-5">
  <div class="card col-sm-10">
    <div class="card-header">
      <h3 class="text-primary">CN</h3>
@@ -189,7 +188,7 @@ function fun(){
 </div>
 </div>
 <div class="row">
-<div class="col-sm-4 mb-5">
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 mb-5">
   <div class="card col-sm-10">
     <div class="card-header">
       <h3 class="text-primary">WT</h3>
@@ -244,8 +243,8 @@ function fun(){
 </div>
 
 <div class="container-fluid" style="background-color: aquamarine;display:none" id="mat41">
-<br>
-<h1 class="text-center  pb-2">Sorry, currently unavailable</h1>
+
+<h1 class="text-center  pb-4">Sorry, currently unavailable</h1>
 <!--
 <h2 class="text-center text-info border border-danger border-top-0 border-right-0 border-left-0 ">4 - 1 Materials</h2>
 
@@ -363,7 +362,7 @@ function fun(){
 </section>-->
 </div>
 <div class="container-fluid" style="background-color: aquamarine;display:none" id="mat42">
-<h1 class="text-center pb-2">Sorry, currently unavailable</h1>
+<h1 class="text-center pb-4">Sorry, currently unavailable</h1>
 <!--
 <h2 class="text-center text-info border border-danger border-top-0 border-right-0 border-left-0 ">4 - 2 Materials</h2>
 

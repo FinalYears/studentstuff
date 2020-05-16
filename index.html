@@ -15,8 +15,9 @@
  .masthead {
   height:100vh;
   min-height: 500px;
-  background:url("home.jpg") no-repeat   ;
+  background:url("home.jpg") no-repeat;
   background-size:cover;
+  
 }
     li a{
       color:rgb(238, 20, 140);
@@ -32,8 +33,13 @@ p a{
 color: rgb(2, 238, 159) !important;
 }
 .navbar-brand:hover{
-color: rgb(255, 251, 6) !important;
+color: rgb(250, 105, 20) !important;
 }
+#facshadow:hover{
+      box-shadow: 5px 5px 0px 0px rgba(207, 69, 0, 0.842),0px 0px 5px 5px rgba(0, 255, 34, 0.842);
+      border-radius: 25px;
+      transition:0.9s ease-in-out;
+    }
   </style>
   <script>
   window.onscroll = function() {myFunction()};
@@ -54,7 +60,7 @@ function fun(){
   var y=document.getElementById("mat32");
   var z=document.getElementById("mat41");
   var p=document.getElementById("mat42");
-  if(x.value=='3-2'){
+  if(x.value=='3-2'){         
   mat32.style.display="block";
  mat41.style.display="none";
  mat42.style.display="none";
@@ -127,34 +133,25 @@ function fun(){
 
 </div>
 
-<div class="container-fluid" style="background-color: aquamarine;display:none" id="mat32">
-
-<h2 class="text-center text-info border border-danger border-top-0 border-right-0 border-left-0 ">3 - 2 Materials</h2>
-
-<section class="container">
-<div class="row">
-<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12 mb-5">
- <div class="card col-sm-10">
-   <div class="card-header">
-     <h3 class="text-primary">CN</h3>
-   </div>
-   <div class="card-body">
-     <ul class="text-success">
-       <li><a href="https://drive.google.com/open?id=1hd69PF7gdy48UEvLGBFlZqIargXSvRAE" target="_blank" class="">Unit - 1 2 3</a></li>
-       <li><a href="#" target="_blank" class="disabled">Unit - 2</a></li>
-       <li><a href="#" target="_blank" class="disabled">Unit - 3</a></li>
-       <li><a href="https://drive.google.com/open?id=1xiVGPeag6p-99njE0BPB-Tku954p9Goa" target="_blank">Unit - 3 4</a></li>
-       <li><a href="https://drive.google.com/open?id=19QJlxGGO4qx-XOGlSKF-QMl1EydGy7gw" target="_blank">Unit - 5</a></li>
-       <li><a href="https://drive.google.com/open?id=1RtEg_DQyRFFzOaHsqR407_K4UXwWtp9t" target="_blank">Unit - 6</a></li>
-     </ul>
-   </div>
- </div>
-</div>
-<div class="col-sm-4 mb-5">
-<div class="card col-sm-10">
-  <div class="card-header">
-    <h3 class="text-primary">STM</h3>
+<div class="container-fluid"  style="background-color: aquamarine;display:none" id="mat32">
+  <h2 class="text-center text-info border border-danger border-top-0 border-right-0 border-left-0 ">3 - 2 Materials</h2>
+  <div class="container">
+<div class="card-group">
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">CN</div>
+  <div class="card-body">
+    <ul class="text-success">
+      <li><a href="https://drive.google.com/open?id=1hd69PF7gdy48UEvLGBFlZqIargXSvRAE" target="_blank" class="">Unit - 1 2 3</a></li>
+      <li><a href="#" target="_blank" class="disabled">Unit - 2</a></li>
+      <li><a href="#" target="_blank" class="disabled">Unit - 3</a></li>
+      <li><a href="https://drive.google.com/open?id=1xiVGPeag6p-99njE0BPB-Tku954p9Goa" target="_blank">Unit - 3 4</a></li>
+      <li><a href="https://drive.google.com/open?id=19QJlxGGO4qx-XOGlSKF-QMl1EydGy7gw" target="_blank">Unit - 5</a></li>
+      <li><a href="https://drive.google.com/open?id=1RtEg_DQyRFFzOaHsqR407_K4UXwWtp9t" target="_blank">Unit - 6</a></li>
+    </ul>
   </div>
+</div>
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">STM</div>
   <div class="card-body">
     <ul class="text-success">
       <li><a href="https://drive.google.com/open?id=1oRX_W_ExueMjrm0E9wPOTovoXlYRB4a0" target="_blank">Unit - 1</a></li>
@@ -168,11 +165,41 @@ function fun(){
     </ul>
   </div>
 </div>
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">WT
+  </div>
+  <div class="card-body">
+    <ul class="text-success">
+      <li><a href="https://drive.google.com/open?id=17mTGqO8XrWf5TAm8ZQKjvEadAxaI4s0e" target="_blank">Unit - 1</a></li>
+     <li><a href="https://drive.google.com/open?id=1npnujgFnSdsLU4Y2mwyWJXsl3FblUvZg" target="_blank">Unit - 2</a></li>
+     <li><a href="https://drive.google.com/open?id=1_0rpv4CSc5D33W7Ma-Opq-j8QAVRQdlp" target="_blank">Unit - 3</a></li>
+     <li><a href="https://drive.google.com/open?id=1SM4NnYgv933zcBLZB58MEChXN_odYCKQ" target="_blank">Unit - 3 Ajax</a></li>
+     <li><a href="https://www.tutorialspoint.com/php/index.htm" target="_blank">Unit - 4</a></li>
+     <li><a href="https://drive.google.com/open?id=1TTauEJH9Fx_i1ag606NQLL465FyxujMQ" target="_blank">Unit - 5</a></li>
+     <li><a href="https://drive.google.com/open?id=1vxE9IYP02MVdz3LCwiPhpF1azoPfe2r3" target="_blank">Unit - 6</a></li>
+    </ul>
+  </div>
+  </div>
 </div>
-<div class="col-sm-4 mb-5">
-<div class="card col-sm-10">
-  <div class="card-header">
-    <h3 class="text-primary">DM</h3>
+
+<div class="card-group">
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">AI</div>
+  <div class="card-body">
+    <ul class="text-success">
+     <li><a href="https://drive.google.com/open?id=1FLKAGamldzLUqxfQ60xgA9upqPWTijJz" target="_blank">Unit - 1</a></li>
+     <li><a href="https://drive.google.com/open?id=1s-LQbHvm22rKY_hphMTDqHauefnBG0U9" target="_blank">Unit - 2</a></li>
+     <li><a href="https://drive.google.com/open?id=1bNyoLeSZ3QJcC9rz9Q6rm7TB5sBAgpwM" target="_blank">Unit - 2 a</a></li>
+     <li><a href="https://drive.google.com/open?id=1fCLE2BoPxCHVxT4c1D0yO_5gGvkEuzg4" target="_blank">Unit - 3</a></li>
+     <li><a href="https://drive.google.com/open?id=1ECRgfJ30ygA5M5pzd_rvhymRrit1QsP9" target="_blank">Unit - 4</a></li>
+     <li><a href="https://drive.google.com/open?id=1i9kIzHgwe1xpM8CbcNkUZfSEvu1tGclW" target="_blank">Unit - 5</a></li>
+     <li><a href="https://drive.google.com/open?id=1sF3TDS7O6E5eD65R1Lbdn3ylX6Ie5Lns" target="_blank">Unit - 6</a></li>
+    </ul>
+  </div>
+</div>
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">
+  DM
   </div>
   <div class="card-body">
     <ul class="text-success">
@@ -185,61 +212,22 @@ function fun(){
     </ul>
   </div>
 </div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 mb-5">
-  <div class="card col-sm-10">
-    <div class="card-header">
-      <h3 class="text-primary">WT</h3>
-    </div>
-    <div class="card-body">
-      <ul class="text-success">
-        <li><a href="https://drive.google.com/open?id=17mTGqO8XrWf5TAm8ZQKjvEadAxaI4s0e" target="_blank">Unit - 1</a></li>
-       <li><a href="https://drive.google.com/open?id=1npnujgFnSdsLU4Y2mwyWJXsl3FblUvZg" target="_blank">Unit - 2</a></li>
-       <li><a href="https://drive.google.com/open?id=1_0rpv4CSc5D33W7Ma-Opq-j8QAVRQdlp" target="_blank">Unit - 3</a></li>
-       <li><a href="https://drive.google.com/open?id=1SM4NnYgv933zcBLZB58MEChXN_odYCKQ" target="_blank">Unit - 3 Ajax</a></li>
-       <li><a href="https://www.tutorialspoint.com/php/index.htm" target="_blank">Unit - 4</a></li>
-       <li><a href="https://drive.google.com/open?id=1TTauEJH9Fx_i1ag606NQLL465FyxujMQ" target="_blank">Unit - 5</a></li>
-       <li><a href="https://drive.google.com/open?id=1vxE9IYP02MVdz3LCwiPhpF1azoPfe2r3" target="_blank">Unit - 6</a></li>
-      </ul>
-    </div>
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">
+   Other</div>
+ 
+  <div class="card-body">
+    <ul class="text-success">
+      <li>1 . <a href="http://coursera.org/" target="_blank">Coursera L4G</a></li>
+      <li>2 . <a href="https://campuscommune.tcs.com/en-in/intro/contests/codevita-season-9" target="_blank">codevita-season-9</a></li>
+      
+    </ul>
+
   </div>
 </div>
-<div class="col-sm-4 mb-5">
- <div class="card col-sm-10">
-   <div class="card-header">
-     <h3 class="text-primary">AI</h3>
-   </div>
-   <div class="card-body">
-     <ul class="text-success">
-      <li><a href="https://drive.google.com/open?id=1FLKAGamldzLUqxfQ60xgA9upqPWTijJz" target="_blank">Unit - 1</a></li>
-      <li><a href="https://drive.google.com/open?id=1s-LQbHvm22rKY_hphMTDqHauefnBG0U9" target="_blank">Unit - 2</a></li>
-      <li><a href="https://drive.google.com/open?id=1bNyoLeSZ3QJcC9rz9Q6rm7TB5sBAgpwM" target="_blank">Unit - 2 a</a></li>
-      <li><a href="https://drive.google.com/open?id=1fCLE2BoPxCHVxT4c1D0yO_5gGvkEuzg4" target="_blank">Unit - 3</a></li>
-      <li><a href="https://drive.google.com/open?id=1ECRgfJ30ygA5M5pzd_rvhymRrit1QsP9" target="_blank">Unit - 4</a></li>
-      <li><a href="https://drive.google.com/open?id=1i9kIzHgwe1xpM8CbcNkUZfSEvu1tGclW" target="_blank">Unit - 5</a></li>
-      <li><a href="https://drive.google.com/open?id=1sF3TDS7O6E5eD65R1Lbdn3ylX6Ie5Lns" target="_blank">Unit - 6</a></li>
-     </ul>
-   </div>
- </div>
-</div>
-<div class="col-sm-4 mb-5">
- <div class="card col-sm-10">
-   <div class="card-header">
-     <h3 class="text-primary">Other</h3> </div>
-  
-   <div class="card-body">
-     <ul class="text-success">
-       <li>1 . <a href="http://coursera.org/" target="_blank">Coursera L4G</a></li>
-       <li>2 . <a href="https://campuscommune.tcs.com/en-in/intro/contests/codevita-season-9" target="_blank">codevita-season-9</a></li>
-       
-     </ul>
-   </div>
 </div>
 </div>
-</div>
-</section>
+<br>
 </div>
 
 <div class="container-fluid" style="background-color: aquamarine;display:none" id="mat41">
@@ -248,231 +236,196 @@ function fun(){
 <!--
 <h2 class="text-center text-info border border-danger border-top-0 border-right-0 border-left-0 ">4 - 1 Materials</h2>
 
-<section class="container">
-<div class="row">
-<div class="col-sm-4 mb-5">
- <div class="card col-sm-10">
-   <div class="card-header">
-     <h3 class="text-primary">CN</h3>
-   </div>
-   <div class="card-body">
-     <ul class="text-success">
-       <li><a href="https://drive.google.com/open?id=1hd69PF7gdy48UEvLGBFlZqIargXSvRAE" target="_blank" class="">Unit - 1 2 3</a></li>
-       <li><a href="#" target="_blank" class="disabled">Unit - 2</a></li>
-       <li><a href="#" target="_blank" class="disabled">Unit - 3</a></li>
-       <li><a href="https://drive.google.com/open?id=1xiVGPeag6p-99njE0BPB-Tku954p9Goa" target="_blank">Unit - 3 4</a></li>
-       <li><a href="https://drive.google.com/open?id=19QJlxGGO4qx-XOGlSKF-QMl1EydGy7gw" target="_blank">Unit - 5</a></li>
-       <li><a href="https://drive.google.com/open?id=1RtEg_DQyRFFzOaHsqR407_K4UXwWtp9t" target="_blank">Unit - 6</a></li>
-     </ul>
-   </div>
- </div>
-</div>
-<div class="col-sm-4 mb-5">
-<div class="card col-sm-10">
-  <div class="card-header">
-    <h3 class="text-primary">STM</h3>
-  </div>
-  <div class="card-body">
-    <ul class="text-success">
-      <li><a href="https://drive.google.com/open?id=1oRX_W_ExueMjrm0E9wPOTovoXlYRB4a0" target="_blank">Unit - 1</a></li>
-      <li><a href="https://drive.google.com/open?id=1qxxnf5AWeJ-OFPLcbEI4vlDJjp0T_c3Z" target="_blank">Unit - 2</a></li>
-      <li><a href="https://drive.google.com/open?id=1hL2ejIhxSylirdZOVXfnj1s0ObNCFYvZ" target="_blank">Unit - 3</a></li>
-      <li><a href="https://drive.google.com/open?id=1OQ3q5Lua3YPF75-YJl61pb71KTyoIPG5" target="_blank">Unit - 4.1</a></li>
-      <li><a href="https://drive.google.com/open?id=1cingmQZ3NDsulhswuEdK97k5iBktC_I1" target="_blank">Unit - 4.2</a></li>
-      <li><a href="https://drive.google.com/open?id=1zRzeIXHm4Pqb4qo6MIp-2m9kDrMkwl5d" target="_blank">Unit - 5</a></li>
-      <li><a href="https://drive.google.com/open?id=1XlmD65y2UPonxOcJ5NT0-a1frIAaBdS6" target="_blank">Unit - 6</a></li>
-      <li><a href="https://drive.google.com/open?id=1ZXTvILksuHecwZ_ermmvsOhgDLGuguin" target="_blank">Unit - 6ppt</a></li>
-    </ul>
-  </div>
-</div>
-</div>
-<div class="col-sm-4 mb-5">
-<div class="card col-sm-10">
-  <div class="card-header">
-    <h3 class="text-primary">DM</h3>
-  </div>
-  <div class="card-body">
-    <ul class="text-success">
-      <li><a href="https://drive.google.com/open?id=1JVMFp9RMVyaPDDnanHmf8QBe3-isQPAt" target="_blank">Unit - 1</a></li>
-       <li><a href="https://drive.google.com/open?id=1NR4R_MmWEWbu8oGm3rbuntLixHc_vPl0" target="_blank">Unit - 2</a></li>
-       <li><a href="https://drive.google.com/open?id=1NAMa8S_u3ZWcM2paOs7QqU6MWeSjL0Tr" target="_blank">Unit - 3</a></li>
-       <li><a href="https://drive.google.com/open?id=1rVLFByDLUZ-xX2mzl_bA9aogvL48umPR" target="_blank">Unit - 4</a></li>
-       <li><a href="https://drive.google.com/open?id=1QW0FDGCnzidSXpUT3KZ6d4iu7Owe-0OA" target="_blank">Unit - 5</a></li>
-       <li><a href="https://drive.google.com/open?id=1JYHoiC3zA2uPft2lVRfIyQljQURkRN6W" target="_blank">Unit - 6</a></li>
-    </ul>
-  </div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-4 mb-5">
-  <div class="card col-sm-10">
-    <div class="card-header">
-      <h3 class="text-primary">WT</h3>
-    </div>
+ <div class="container">
+  <div class="card-group">
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">CN</div>
     <div class="card-body">
       <ul class="text-success">
-        <li><a href="" target="_blank">Unit - 1</a></li>
-       <li><a href="" target="_blank">Unit - 2</a></li>
-       <li><a href="" target="_blank">Unit - 3</a></li>
-       <li><a href="" target="_blank">Unit - 4</a></li>
-       <li><a href="" target="_blank">Unit - 5</a></li>
-       <li><a href="" target="_blank">Unit - 6</a></li>
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+       </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">STM</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
       </ul>
     </div>
   </div>
-</div>
-<div class="col-sm-4 mb-5">
- <div class="card col-sm-10">
-   <div class="card-header">
-     <h3 class="text-primary">AI</h3>
-   </div>
-   <div class="card-body">
-     <ul class="text-success">
-      <li><a href="" target="_blank">Unit - 1</a></li>
-      <li><a href="" target="_blank">Unit - 2</a></li>
-      <li><a href="" target="_blank">Unit - 3</a></li>
-      <li><a href="" target="_blank">Unit - 4</a></li>
-      <li><a href="" target="_blank">Unit - 5</a></li>
-      <li><a href="" target="_blank">Unit - 6</a></li>
-     </ul>
-   </div>
- </div>
-</div>
-<div class="col-sm-4 mb-5">
- <div class="card col-sm-10">
-   <div class="card-header">
-     <h3 class="text-primary">Range</h3> </div>
-  
-   <div class="card-body">
-     <ul class="text-success">
-      <li><a href="" target="_blank">Unit - 1</a></li>
-      <li><a href="" target="_blank">Unit - 2</a></li>
-      <li><a href="" target="_blank">Unit - 3</a></li>
-      <li><a href="" target="_blank">Unit - 4</a></li>
-      <li><a href="" target="_blank">Unit - 5</a></li>
-      <li><a href="" target="_blank">Unit - 6</a></li>
-       
-     </ul>
-   </div>
- </div>
-</div>
-</div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">WT
+    </div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
 
-</section>-->
+<div class="card-group">
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">AI</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">
+    DM
+    </div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">
+     Other</div>
+   
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+<br>
+</div>
+-->
 </div>
 <div class="container-fluid" style="background-color: aquamarine;display:none" id="mat42">
 <h1 class="text-center pb-4">Sorry, currently unavailable</h1>
 <!--
-<h2 class="text-center text-info border border-danger border-top-0 border-right-0 border-left-0 ">4 - 2 Materials</h2>
-
-<section class="container">
-<div class="row">
-<div class="col-sm-4 mb-5">
- <div class="card col-sm-10">
-   <div class="card-header">
-     <h3 class="text-primary">CN</h3>
-   </div>
-   <div class="card-body">
-     <ul class="text-success">
-       <li><a href="https://drive.google.com/open?id=1hd69PF7gdy48UEvLGBFlZqIargXSvRAE" target="_blank" class="">Unit - 1 2 3</a></li>
-       <li><a href="#" target="_blank" class="disabled">Unit - 2</a></li>
-       <li><a href="#" target="_blank" class="disabled">Unit - 3</a></li>
-       <li><a href="https://drive.google.com/open?id=1xiVGPeag6p-99njE0BPB-Tku954p9Goa" target="_blank">Unit - 3 4</a></li>
-       <li><a href="https://drive.google.com/open?id=19QJlxGGO4qx-XOGlSKF-QMl1EydGy7gw" target="_blank">Unit - 5</a></li>
-       <li><a href="https://drive.google.com/open?id=1RtEg_DQyRFFzOaHsqR407_K4UXwWtp9t" target="_blank">Unit - 6</a></li>
-     </ul>
-   </div>
- </div>
-</div>
-<div class="col-sm-4 mb-5">
-<div class="card col-sm-10">
-  <div class="card-header">
-    <h3 class="text-primary">STM</h3>
-  </div>
-  <div class="card-body">
-    <ul class="text-success">
-      <li><a href="https://drive.google.com/open?id=1oRX_W_ExueMjrm0E9wPOTovoXlYRB4a0" target="_blank">Unit - 1</a></li>
-      <li><a href="https://drive.google.com/open?id=1qxxnf5AWeJ-OFPLcbEI4vlDJjp0T_c3Z" target="_blank">Unit - 2</a></li>
-      <li><a href="https://drive.google.com/open?id=1hL2ejIhxSylirdZOVXfnj1s0ObNCFYvZ" target="_blank">Unit - 3</a></li>
-      <li><a href="https://drive.google.com/open?id=1OQ3q5Lua3YPF75-YJl61pb71KTyoIPG5" target="_blank">Unit - 4.1</a></li>
-      <li><a href="https://drive.google.com/open?id=1cingmQZ3NDsulhswuEdK97k5iBktC_I1" target="_blank">Unit - 4.2</a></li>
-      <li><a href="https://drive.google.com/open?id=1zRzeIXHm4Pqb4qo6MIp-2m9kDrMkwl5d" target="_blank">Unit - 5</a></li>
-      <li><a href="https://drive.google.com/open?id=1XlmD65y2UPonxOcJ5NT0-a1frIAaBdS6" target="_blank">Unit - 6</a></li>
-      <li><a href="https://drive.google.com/open?id=1ZXTvILksuHecwZ_ermmvsOhgDLGuguin" target="_blank">Unit - 6ppt</a></li>
-    </ul>
-  </div>
-</div>
-</div>
-<div class="col-sm-4 mb-5">
-<div class="card col-sm-10">
-  <div class="card-header">
-    <h3 class="text-primary">DM</h3>
-  </div>
-  <div class="card-body">
-    <ul class="text-success">
-      <li><a href="https://drive.google.com/open?id=1JVMFp9RMVyaPDDnanHmf8QBe3-isQPAt" target="_blank">Unit - 1</a></li>
-       <li><a href="https://drive.google.com/open?id=1NR4R_MmWEWbu8oGm3rbuntLixHc_vPl0" target="_blank">Unit - 2</a></li>
-       <li><a href="https://drive.google.com/open?id=1NAMa8S_u3ZWcM2paOs7QqU6MWeSjL0Tr" target="_blank">Unit - 3</a></li>
-       <li><a href="https://drive.google.com/open?id=1rVLFByDLUZ-xX2mzl_bA9aogvL48umPR" target="_blank">Unit - 4</a></li>
-       <li><a href="https://drive.google.com/open?id=1QW0FDGCnzidSXpUT3KZ6d4iu7Owe-0OA" target="_blank">Unit - 5</a></li>
-       <li><a href="https://drive.google.com/open?id=1JYHoiC3zA2uPft2lVRfIyQljQURkRN6W" target="_blank">Unit - 6</a></li>
-    </ul>
-  </div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-4 mb-5">
-  <div class="card col-sm-10">
-    <div class="card-header">
-      <h3 class="text-primary">WT</h3>
-    </div>
+ <div class="container">
+  <div class="card-group">
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">CN</div>
     <div class="card-body">
       <ul class="text-success">
-        <li><a href="" target="_blank">Unit - 1</a></li>
-       <li><a href="" target="_blank">Unit - 2</a></li>
-       <li><a href="" target="_blank">Unit - 3</a></li>
-       <li><a href="" target="_blank">Unit - 4</a></li>
-       <li><a href="" target="_blank">Unit - 5</a></li>
-       <li><a href="" target="_blank">Unit - 6</a></li>
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+       </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">STM</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
       </ul>
     </div>
   </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">WT
+    </div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+<div class="card-group">
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">AI</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">
+    DM
+    </div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">
+     Other</div>
+   
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+
+    </div>
+  </div>
 </div>
-<div class="col-sm-4 mb-5">
- <div class="card col-sm-10">
-   <div class="card-header">
-     <h3 class="text-primary">AI</h3>
-   </div>
-   <div class="card-body">
-     <ul class="text-success">
-      <li><a href="" target="_blank">Unit - 1</a></li>
-      <li><a href="" target="_blank">Unit - 2</a></li>
-      <li><a href="" target="_blank">Unit - 3</a></li>
-      <li><a href="" target="_blank">Unit - 4</a></li>
-      <li><a href="" target="_blank">Unit - 5</a></li>
-      <li><a href="" target="_blank">Unit - 6</a></li>
-     </ul>
-   </div>
- </div>
+<br>
 </div>
-<div class="col-sm-4 mb-5">
- <div class="card col-sm-10">
-   <div class="card-header">
-     <h3 class="text-primary">Other</h3> </div>
-  
-   <div class="card-body">
-     <ul class="text-success">
-       <li>1 . <a href="http://coursera.org/" target="_blank">Coursera L4G</a></li>
-       <li>2 . <a href="https://campuscommune.tcs.com/en-in/intro/contests/codevita-season-9" target="_blank">codevita-season-9</a></li>
-       
-     </ul>
-   </div>
-</div>
-</div>
-</div>
-</section>-->
+-->
 </div>
 </div><div class="container-fluid">
   <br>

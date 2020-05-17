@@ -17,6 +17,540 @@
   min-height: 500px;
   background:url("home.jpg") no-repeat;
   background-size:cover;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Final Year Buddies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+ .masthead {
+  height:100vh;
+  min-height: 500px;
+  background:url("home.jpg") no-repeat;
+  background-size:cover;
+  
+}
+    li a{
+      color:rgb(238, 20, 140);
+    }
+    a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+p a{
+  color:rgb(221, 45, 168);
+}
+.navbar-brand{
+color: rgb(2, 238, 159) !important;
+}
+.navbar-brand:hover{
+color: rgb(250, 105, 20) !important;
+}
+#facshadow:hover{
+      box-shadow: 5px 5px 0px 0px rgba(207, 69, 0, 0.842),0px 0px 5px 5px rgba(0, 255, 34, 0.842);
+      border-radius: 25px;
+      transition:0.9s ease-in-out;
+
+    }
+    #facshadows:hover{
+
+  transition: 0.9s ease-in-out;
+
+
+    }
+  </style>
+  <script>
+  window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById("cc").style.backgroundColor ="#23415c";
+    document.getElementById("cc").style.color = "black";
+    document.getElementById("cc").style.transition = ".9s";
+  }
+  else{
+  document.getElementById("cc").style.backgroundColor = "transparent";
+  document.getElementById("cc").style.color = "white";
+  }
+}
+function fun(){
+  var x=document.getElementById("sell");
+  var y=document.getElementById("mat32");
+  var z=document.getElementById("mat41");
+  var p=document.getElementById("mat42");
+  if(x.value=='3-2'){         
+  mat32.style.display="block";
+ mat41.style.display="none";
+ mat42.style.display="none";
+  }
+  if(x.value=='4-1'){
+  mat41.style.display="block";
+  mat32.style.display="none";
+  mat42.style.display="none";
+  }
+   if(x.value=='4-2'){
+  mat41.style.display="none";
+  mat32.style.display="none";
+  mat42.style.display="block";
+  }
+  if(x.value=='select'){
+  mat41.style.display="none";
+  mat32.style.display="none";
+  mat42.style.display="none";
+  }
+  }
+  var myVar;
+
+function myTost() {
+  myVar = setInterval(noti,10000);
+}
+var i=0;
+function noti() {
+var x=document.getElementById('toa');
+var y=document.getElementById('tob');
+var y=document.getElementById('toc');
+i++;
+ if(i==1){
+    toc.style.display="none";
+ tob.style.display="none";}
+    toa.style.display="block";
+    if(i==2){
+        toc.style.display="none";
+        toa.style.display="none";
+    tob.style.display="block";
+        i=0;}
+       
+}
+</script>
+
+</head>
+<body onload="myTost()">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:transparent;color:white" id="cc">
+    <div class="container-fluid">
+      <h3 class="navbar-brand btn border border-danger border-top-0 border-right-0 border-left-0 ">Final Year Buddies</h3>
+     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+           <input type="button" id="edubtn" value="Education" onmouseover="EDUhide(this)" class="nav-link btn">
+          </li>
+          <li class="nav-item">
+            <input type="button" id="combtn" value="Compilers" onmouseover="COMhide(this)" class="nav-link btn">
+          </li>
+           <li class="nav-item">
+            <input type="button" id="shobtn" value="Shoping" onmouseover="SHOhide(this)" class="nav-link btn">
+          </li>
+        </ul>
+      </div>-->
+    </div>
+</nav>
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+  <h2 class="text-white"><cite><q>Life is what we make it, always has been, always will be</q></cite></h2>
+</div>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid pt-2 pb-2"  style="background-color: aquamarine;">
+  <center><form oninput="fun()">
+  <label for="sel1" class="text-danger"><strong>Select Semester to get Materials:</strong></label>
+  <div class="form-group col-sm-4 col-lg-3 col-xs-6">
+    
+    <select class="form-control rounded-pill" id="sell" name="sellist1">
+    <option>select</option>
+      <option>3-2</option>
+      <option>4-1</option>
+      <option>4-2</option>
+    </select>
+    </div>
+</form>
+</center>
+
+</div>
+
+<div class="container-fluid"  style="background-color: aquamarine;display:none" id="mat32">
+  <h2 class="text-center text-info border border-danger border-top-0 border-right-0 border-left-0 ">3 - 2 Materials</h2>
+  <div class="container">
+<div class="card-group">
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">CN</div>
+  <div class="card-body">
+    <ul class="text-success">
+      <li><a href="https://drive.google.com/open?id=1hd69PF7gdy48UEvLGBFlZqIargXSvRAE" target="_blank" class="">Unit - 1 2 3</a></li>
+      <li><a href="#" target="_blank" class="disabled">Unit - 2</a></li>
+      <li><a href="#" target="_blank" class="disabled">Unit - 3</a></li>
+      <li><a href="https://drive.google.com/open?id=1xiVGPeag6p-99njE0BPB-Tku954p9Goa" target="_blank">Unit - 3 4</a></li>
+      <li><a href="https://drive.google.com/open?id=19QJlxGGO4qx-XOGlSKF-QMl1EydGy7gw" target="_blank">Unit - 5</a></li>
+      <li><a href="https://drive.google.com/open?id=1RtEg_DQyRFFzOaHsqR407_K4UXwWtp9t" target="_blank">Unit - 6</a></li>
+    </ul>
+  </div>
+</div>
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">STM</div>
+  <div class="card-body">
+    <ul class="text-success">
+      <li><a href="https://drive.google.com/open?id=1oRX_W_ExueMjrm0E9wPOTovoXlYRB4a0" target="_blank">Unit - 1</a></li>
+      <li><a href="https://drive.google.com/open?id=1qxxnf5AWeJ-OFPLcbEI4vlDJjp0T_c3Z" target="_blank">Unit - 2</a></li>
+      <li><a href="https://drive.google.com/open?id=1hL2ejIhxSylirdZOVXfnj1s0ObNCFYvZ" target="_blank">Unit - 3</a></li>
+      <li><a href="https://drive.google.com/open?id=1OQ3q5Lua3YPF75-YJl61pb71KTyoIPG5" target="_blank">Unit - 4.1</a></li>
+      <li><a href="https://drive.google.com/open?id=1cingmQZ3NDsulhswuEdK97k5iBktC_I1" target="_blank">Unit - 4.2</a></li>
+      <li><a href="https://drive.google.com/open?id=1zRzeIXHm4Pqb4qo6MIp-2m9kDrMkwl5d" target="_blank">Unit - 5</a></li>
+      <li><a href="https://drive.google.com/open?id=1XlmD65y2UPonxOcJ5NT0-a1frIAaBdS6" target="_blank">Unit - 6</a></li>
+      <li><a href="https://drive.google.com/open?id=1ZXTvILksuHecwZ_ermmvsOhgDLGuguin" target="_blank">Unit - 6ppt</a></li>
+    </ul>
+  </div>
+</div>
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">WT
+  </div>
+  <div class="card-body">
+    <ul class="text-success">
+      <li><a href="https://drive.google.com/open?id=17mTGqO8XrWf5TAm8ZQKjvEadAxaI4s0e" target="_blank">Unit - 1</a></li>
+     <li><a href="https://drive.google.com/open?id=1npnujgFnSdsLU4Y2mwyWJXsl3FblUvZg" target="_blank">Unit - 2</a></li>
+     <li><a href="https://drive.google.com/open?id=1_0rpv4CSc5D33W7Ma-Opq-j8QAVRQdlp" target="_blank">Unit - 3</a></li>
+     <li><a href="https://drive.google.com/open?id=1SM4NnYgv933zcBLZB58MEChXN_odYCKQ" target="_blank">Unit - 3 Ajax</a></li>
+     <li><a href="https://www.tutorialspoint.com/php/index.htm" target="_blank">Unit - 4</a></li>
+     <li><a href="https://drive.google.com/open?id=1TTauEJH9Fx_i1ag606NQLL465FyxujMQ" target="_blank">Unit - 5</a></li>
+     <li><a href="https://drive.google.com/open?id=1vxE9IYP02MVdz3LCwiPhpF1azoPfe2r3" target="_blank">Unit - 6</a></li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+<div class="card-group">
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">AI</div>
+  <div class="card-body">
+    <ul class="text-success">
+     <li><a href="https://drive.google.com/open?id=1FLKAGamldzLUqxfQ60xgA9upqPWTijJz" target="_blank">Unit - 1</a></li>
+     <li><a href="https://drive.google.com/open?id=1s-LQbHvm22rKY_hphMTDqHauefnBG0U9" target="_blank">Unit - 2</a></li>
+     <li><a href="https://drive.google.com/open?id=1bNyoLeSZ3QJcC9rz9Q6rm7TB5sBAgpwM" target="_blank">Unit - 2 a</a></li>
+     <li><a href="https://drive.google.com/open?id=1fCLE2BoPxCHVxT4c1D0yO_5gGvkEuzg4" target="_blank">Unit - 3</a></li>
+     <li><a href="https://drive.google.com/open?id=1ECRgfJ30ygA5M5pzd_rvhymRrit1QsP9" target="_blank">Unit - 4</a></li>
+     <li><a href="https://drive.google.com/open?id=1i9kIzHgwe1xpM8CbcNkUZfSEvu1tGclW" target="_blank">Unit - 5</a></li>
+     <li><a href="https://drive.google.com/open?id=1sF3TDS7O6E5eD65R1Lbdn3ylX6Ie5Lns" target="_blank">Unit - 6</a></li>
+    </ul>
+  </div>
+</div>
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">
+  DM
+  </div>
+  <div class="card-body">
+    <ul class="text-success">
+      <li><a href="https://drive.google.com/open?id=1JVMFp9RMVyaPDDnanHmf8QBe3-isQPAt" target="_blank">Unit - 1</a></li>
+       <li><a href="https://drive.google.com/open?id=1NR4R_MmWEWbu8oGm3rbuntLixHc_vPl0" target="_blank">Unit - 2</a></li>
+       <li><a href="https://drive.google.com/open?id=1NAMa8S_u3ZWcM2paOs7QqU6MWeSjL0Tr" target="_blank">Unit - 3</a></li>
+       <li><a href="https://drive.google.com/open?id=1rVLFByDLUZ-xX2mzl_bA9aogvL48umPR" target="_blank">Unit - 4</a></li>
+       <li><a href="https://drive.google.com/open?id=1QW0FDGCnzidSXpUT3KZ6d4iu7Owe-0OA" target="_blank">Unit - 5</a></li>
+       <li><a href="https://drive.google.com/open?id=1JYHoiC3zA2uPft2lVRfIyQljQURkRN6W" target="_blank">Unit - 6</a></li>
+    </ul>
+  </div>
+</div>
+<div class="card m-1" id="facshadow">
+  <div class="card-header text-primary">
+   Other</div>
+ 
+  <div class="card-body">
+    <ul class="text-success">
+      <li>1 . <a href="http://coursera.org/" target="_blank">Coursera L4G</a></li>
+      <li>2 . <a href="https://campuscommune.tcs.com/en-in/intro/contests/codevita-season-9" target="_blank">codevita-season-9</a></li>
+      
+    </ul>
+
+  </div>
+</div>
+</div>
+</div>
+<br>
+</div>
+
+<div class="container-fluid" style="background-color: aquamarine;display:none" id="mat41">
+
+<h1 class="text-center  pb-4">Sorry, currently unavailable</h1>
+<!--
+<h2 class="text-center text-info border border-danger border-top-0 border-right-0 border-left-0 ">4 - 1 Materials</h2>
+
+ <div class="container">
+  <div class="card-group">
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">CN</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+       </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">STM</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">WT
+    </div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+<div class="card-group">
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">AI</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">
+    DM
+    </div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">
+     Other</div>
+   
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+<br>
+</div>
+-->
+</div>
+<div class="container-fluid" style="background-color: aquamarine;display:none" id="mat42">
+<h1 class="text-center pb-4">Sorry, currently unavailable</h1>
+<!--
+ <div class="container">
+  <div class="card-group">
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">CN</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+       </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">STM</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">WT
+    </div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+<div class="card-group">
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">AI</div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">
+    DM
+    </div>
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card m-1" id="facshadow">
+    <div class="card-header text-primary">
+     Other</div>
+   
+    <div class="card-body">
+      <ul class="text-success">
+        <li><a href="#" target="_blank">Unit - 1</a></li>
+        <li><a href="#" target="_blank">Unit - 2</a></li>
+        <li><a href="#" target="_blank">Unit - 3</a></li>
+        <li><a href="#" target="_blank">Unit - 4</a></li>
+        <li><a href="#" target="_blank">Unit - 5</a></li>
+        <li><a href="#" target="_blank">Unit - 6</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+<br>
+</div>
+-->
+</div>
+</div><div class="container-fluid">
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+<h4 class="text-info border border-danger border-top-0 border-right-0 border-left-0"><strong>Attendance</strong></h4>
+<p class="text-danger">Previous - month : <strong class="text-warning">Currently unavailable</strong></p>
+<p class="text-danger">This - month : <strong class="text-warning">Currently unavailable</strong></p>
+<h4 class="text-info border border-danger border-top-0 border-right-0 border-left-0"><strong>Class Stuff</strong></h4>
+<p style="color:rgb(221, 45, 168)">1. Not Yet Started</p>
+<p style="color:rgb(221, 45, 168)">2. Not Yet Started</p>
+<p style="color:rgb(221, 45, 168)">3. Not Yet Started</p>
+<p style="color:rgb(221, 45, 168)">4. Not Yet Started</p>
+
+    </div>
+    <div class="col-sm-4">
+      <h4 class="text-info border border-danger border-top-0 border-right-0 border-left-0"><strong>Notifier</strong></h4>
+      <div class="container">
+        <div class="toast fade show col-sm-4" style="display:block" id="toc">
+            <div class="toast-header">
+                <strong class="mr-auto text-primary">INFO</strong>
+             
+            </div>
+            <div class="toast-body">
+                <p>Welcome to notifier</p>
+                <p>This Panel contains notifications </p>
+                <p>It contains this and Last week notifications</p>
+                <p>if any new Notification intimate to CR of the class</p>
+                
+                 </div>
+        </div>
+                <div class="toast fade show col-sm-4" style="display:none" id="toa">
+                    <div class="toast-header">
+                        <strong class="ml-auto text-success">This Week</strong>
+                       
+                    </div>
+                    <div class="toast-body">
+                        <p class="text-success">1 . <a href="" target="_blank" class="disabled">AICTE free course register portal</a></p>
+                        <p class="text-success">2 . <a href="" target="_blank" class="disabled">TCS ion</a></p>
+                        <p class="text-success">3 . <a href="" target="_blank" class="disabled"> TCS Codevita Register </a></p>
+                        <p class="text-success">4 . <a href="" target="_blank" class="disabled">Course era </a></p>
+                        <p class="text-success">5 . <a href="" target="_blank" class="disabled">Lockdown may-4 to may-17</a></p>
+                        
+                    </div>
+                </div>
+
+                <div class="toast fade show col-sm-4" style="display:none" id="tob">
+                    <div class="toast-header">
+                        <strong class="ml-auto text-success">Last Week</strong>
+                        
+                    </div>
+                    <div class="toast-body">
+                        <p class="text-success">1 . <a href="" target="_blank" class="disabled"> Course era </a></p>
+                        <p class="text-success">2 . <a href="" target="_blank" class="disabled">TCS ion</a></p>
+                        <p class="text-success">3 . <a href="" target="_blank" class="disabled"> TCS Codevita Register </a></p>
+                        <p class="text-success">4 . <a href="" target="_blank" class="disabled">Lockdown may-4 to may-17</a></p>
+                        <p class="text-success">5 . <a href="" target="_blank" class="disabled"> Lockdown april-15 to april-May-3</a></p>
+                        
+                    </div>
+           </div>
+           <br>
+        </div>
+    </div>
+
+  </div>
+
+  </div>
+  <div class="container-fluid">
+    <div class="card text-center text-warning bg-primary"><h4 class="mt-2"><strong>College  Stuff</strong></h4></div>
+    <div class="card-body">
+      <h1 class="text-danger text-center">#Stay Home Stay Safe</h1>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
   
 }
     li a{
